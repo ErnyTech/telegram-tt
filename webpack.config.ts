@@ -227,7 +227,7 @@ export default function createConfig(
         saveReportTo: path.resolve('./public/statoscope-report.html'),
         saveStatsTo: path.resolve('./public/build-stats.json'),
         normalizeStats: true,
-        open: 'file',
+        open: process.env.STATOSCOPE_OPEN || 'file',
         extensions: [new WebpackContextExtension()], // eslint-disable-line @typescript-eslint/no-use-before-define
       }),
     ],
