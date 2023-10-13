@@ -29,7 +29,6 @@
     "test": "cross-env APP_ENV=test jest --verbose --silent --forceExit",
     "test:playwright": "playwright test",
     "test:record": "playwright codegen localhost:1235",
-    "statoscope:validate-diff": "statoscope validate --input input.json --reference reference.json",
     "prepare": "husky install",
     "postinstall": "(cd dev/eslint-multitab && npm i)",
     "postversion": "rm -rf .patch-version && npm run update_version"
@@ -64,8 +63,6 @@
     "@electron/rebuild": "^3.3.0",
     "@glen/jest-raw-loader": "^2.0.0",
     "@playwright/test": "^1.38.1",
-    "@statoscope/cli": "5.28.0",
-    "@statoscope/webpack-plugin": "5.28.0",
     "@testing-library/jest-dom": "^6.1.3",
     "@twbs/fantasticon": "^2.7.1",
     "@types/croppie": "^2.6.2",
